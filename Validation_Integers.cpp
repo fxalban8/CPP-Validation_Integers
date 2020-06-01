@@ -17,6 +17,15 @@ int main(){
 		cout<<"Enter an integer"<<endl;
 		cin>>input;
 	}
-	
+
+
+	//flushing the buffer
+	int c;
+	do{
+		c=cin.get();
+	}while(c!='\n'&&c!=EOF);
+
+	//expecting ENTER
+	cin.get();
 	return 0;
 }
